@@ -18,7 +18,7 @@ Place the downloaded logit files into the folder "logits_5m/logits_resnet_s7".
 ## Real experiments data
 For the real data experiments the predictions of ResNet-110, DenseNet-40 [^4], ResNet Wide 32 [^5] on CIFAR-10 and CIFAR-100 [^6] are used.
 
-Download the logits in pickle format from [here](https://github.com/markus93/NN_calibration) [^7].
+Download the logits in pickle format from [here](https://github.com/markus93/NN_calibration/tree/master/logits) [^7].
 
 Place the downloaded logit files into the folder "logits".
 
