@@ -1,4 +1,4 @@
-Experiments code for thesis "Calibration of Multi-Class Probabilistic Classifiers".
+Code for the experiments of the thesis "Calibration of Multi-Class Probabilistic Classifiers".
 
 # Requirements
 Python 3.8.5 and Anaconda package manager was used for the experiments.
