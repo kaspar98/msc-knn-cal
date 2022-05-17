@@ -1,3 +1,5 @@
+Experiments code for Master’s Thesis "Calibration of Multi-Class Probabilistic Classifiers".
+
 # Requirements
 Python 3.8.5 and Anaconda package manager was used for the experiments.
 To recreate the virtual environment, download  [Anaconda](https://www.anaconda.com/) and run 
