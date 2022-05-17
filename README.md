@@ -12,20 +12,19 @@ To construct the true calibration map used in the synthetic experiment, the ResN
 
 Download the logits in pickle format from [here](https://owncloud.ut.ee/owncloud/index.php/s/bJzpBbHmYDoaG3T) [^3].
 
-
-Place the downloaded logit files into the folder "logits_5m/logits_resnet_s7".
+Place the downloaded logit files into the folder *"logits_5m/logits_resnet_s7"*
 
 ## Real experiments data
 For the real data experiments the predictions of ResNet-110, DenseNet-40 [^4], ResNet Wide 32 [^5] on CIFAR-10 and CIFAR-100 [^6] are used.
 
 Download the logits in pickle format from [here](https://github.com/markus93/NN_calibration/tree/master/logits) [^7].
 
-Place the downloaded logit files into the folder "logits".
+Place the downloaded logit files into the folder *"logits"*
 
 # Running the experiments
 ## Real data
 To train different post-hoc calibration methods and save their predictions, run `python train_and_save_calibrators.py`.
-The predictions will be saved in pickle format to the folder "results".
+The predictions will be saved in pickle format to the folder *"results"*
 
 By default the following model-dataset combinations will be used:
   * densenet40_c10,  
@@ -35,7 +34,7 @@ By default the following model-dataset combinations will be used:
   * resnet110_c10,
   * resnet110_c100.
   
-To run for only some of the combinations, modify the for-loop in line 241 of "train_and_save_calibrators.py".
+To run for only some of the combinations, modify the for-loop in line 241 of *"train_and_save_calibrators.py"*.
 
 By default the following calibration methods will be trained for the model-dataset combinations:
 * Dirichlet scaling with ODIR,
@@ -53,7 +52,7 @@ By default the following calibration methods will be trained for the model-datas
 * composition of TS and random calibration forests.
 
 For composition methods, temperature scaling is always applied first.
-To run only some of the methods, modify the for-loop in line 250 of "train_and_save_calibrators.py".
+To run only some of the methods, modify the for-loop in line 250 of *"train_and_save_calibrators.py"*
 
 **Including IOP**.
 To also include the results of diagonal subfamily of intra order-preserving methods, clone the original repository https://github.com/AmirooR/IntraOrderPreservingCalibration [^8].
@@ -64,17 +63,17 @@ For each model-dataset combination run their scripts:
 `python -u evaluate.py --exp_dir exp_dir/{dataset}/{model}/DIAG --save_logits True`
 
 The exact instructions to run the IOP method are provided in their repository.
-Copy the saved files "scores.npy" and "logits.npy" for each model-dataset combination into the corresponding folders "results/precomputed/iop/{model}_{dataset}".
-To modify the saved logit files to be compatible with the table generation code of this work, uncomment the line 255 in "train_and_save_calibrators.py" and rerun it for "iop_diag" only (modify the for-loop in line 250).
+Copy the saved files *"scores.npy"* and *"logits.npy"* for each model-dataset combination into the corresponding folders *"results/precomputed/iop/{model}_{dataset}"*.
+To modify the saved logit files to be compatible with the table generation code of this work, uncomment the line 255 in *"train_and_save_calibrators.py"* and rerun it for "iop_diag" only (modify the for-loop in line 250).
 
-Finally, to recreate the tables of real data experiments, run the notebook "Tables of real data experiments.ipynb".
+Finally, to recreate the tables of real data experiments, run the notebook *"Tables of real data experiments.ipynb"*.
 
 ## Synthetic data
 To have the IOP method available for the synthetic experients, clone the original repository to the the root directory of this repository:
 
 `git clone https://github.com/AmirooR/IntraOrderPreservingCalibration`.
 
-To recreate the figures and the table with results for synthetic experiments, run the notebook "Figures and synthetic experiment.ipynb".
+To recreate the figures and the table with results for synthetic experiments, run the notebook *"Figures and synthetic experiment.ipynb"*.
 
 # References
 [^1]: Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. Deep Residual Learning
