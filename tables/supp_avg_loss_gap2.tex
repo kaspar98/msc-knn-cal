@@ -1,0 +1,23 @@
+\begin{table*}
+\caption{avg_loss_gap2}
+\label{table:avg_loss_gap2}
+\centering
+\begin{adjustbox}{width=\textwidth}
+
+\begin{tabular}{lllllllll}
+\toprule
+\multicolumn{7}{c}{}&\multicolumn{2}{c}{TS}\\
+\cmidrule{8-9}
+\multicolumn{1}{c}{}&\multicolumn{1}{c}{}&\multicolumn{1}{c}{uncal}&\multicolumn{1}{c}{TS}&\multicolumn{1}{c}{KNN}&\multicolumn{1}{c}{knnTS_euc_cv_ll}&\multicolumn{1}{c}{rfTS_cv_ll}&\multicolumn{1}{c}{kernelTS_RBF_cv_ll}&\multicolumn{1}{c}{kernelTS_DIR_cv_ll}\\\midrule
+C-10 & DenseNet-40 &  $0.0295_{7}$ &  $0.0063_{6}$ &  $0.0046_{3}$ &    $0.0046_{3}$ &            $0.004_{1}$ &            $0.004_{1}$ &       $0.0054_{5}$ \\
+     & ResNet-110 &  $0.0259_{7}$ &  $0.0056_{6}$ &  $0.0035_{4}$ &    $0.0033_{2}$ &           $0.0035_{4}$ &  $\mathbf{0.0032_{1}}$ &       $0.0034_{3}$ \\
+     & ResNet Wide 32 &  $0.0251_{7}$ &  $0.0095_{6}$ &  $0.0049_{2}$ &    $0.0056_{3}$ &  $\mathbf{0.0047_{1}}$ &           $0.0058_{4}$ &       $0.0075_{5}$ \\
+\cmidrule{2-9}
+     & average rank &             7 &             6 &           3.3 &             2.8 &                    2.3 &                    2.2 &                4.3 \\
+\cmidrule{1-9}
+\bottomrule
+\end{tabular}
+
+
+\end{adjustbox}
+\end{table*}

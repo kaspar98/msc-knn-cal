@@ -1,0 +1,28 @@
+\begin{table*}
+\caption{avg_loss_gap2}
+\label{table:avg_loss_gap2}
+\centering
+\begin{adjustbox}{width=\textwidth}
+
+\begin{tabular}{llllllllll}
+\toprule
+\multicolumn{8}{c}{}&\multicolumn{2}{c}{TS}\\
+\cmidrule{9-10}
+\multicolumn{1}{c}{}&\multicolumn{1}{c}{}&\multicolumn{1}{c}{uncal}&\multicolumn{1}{c}{dir_ODIR_pt}&\multicolumn{1}{c}{ms_ODIR_pt}&\multicolumn{1}{c}{VS}&\multicolumn{1}{c}{IOP}&\multicolumn{1}{c}{TS}&\multicolumn{1}{c}{dec2TS}&\multicolumn{1}{c}{KNN}\\\midrule
+C-10 & DenseNet-40 &  $0.0295_{8}$ &           $0.0055_{3}$ &  $0.0058_{4}$ &  $0.0061_{6}$ &            $0.006_{5}$ &  $0.0063_{7}$ &           $0.0051_{2}$ &  $\mathbf{0.0046_{1}}$ \\
+      & ResNet-110 &  $0.0259_{8}$ &            $0.006_{6}$ &  $0.0058_{5}$ &  $0.0062_{7}$ &           $0.0045_{3}$ &  $0.0056_{4}$ &           $0.0042_{2}$ &  $\mathbf{0.0035_{1}}$ \\
+      & ResNet Wide 32 &  $0.0251_{8}$ &           $0.0048_{3}$ &  $0.0046_{2}$ &  $0.0048_{3}$ &           $0.0098_{7}$ &  $0.0095_{6}$ &  $\mathbf{0.0045_{1}}$ &           $0.0049_{5}$ \\
+\cmidrule{2-10}
+      & average rank &             8 &                    4.2 &           3.7 &           5.5 &                      5 &           5.7 &                    1.7 &                    2.3 \\
+\cmidrule{1-10}
+C-100 & DenseNet-40 &  $0.1154_{8}$ &  $\mathbf{0.0064_{1}}$ &  $0.0077_{4}$ &  $0.0068_{2}$ &           $0.0197_{6}$ &  $0.0071_{3}$ &           $0.0177_{5}$ &            $0.021_{7}$ \\
+      & ResNet-110 &  $0.1008_{8}$ &           $0.0096_{3}$ &  $0.0109_{5}$ &  $0.0119_{7}$ &  $\mathbf{0.0059_{1}}$ &  $0.0078_{2}$ &           $0.0117_{6}$ &           $0.0098_{4}$ \\
+      & ResNet Wide 32 &  $0.1027_{8}$ &           $0.0086_{5}$ &  $0.0085_{3}$ &  $0.0085_{3}$ &  $\mathbf{0.0068_{1}}$ &  $0.0077_{2}$ &           $0.0115_{6}$ &           $0.0141_{7}$ \\
+\cmidrule{2-10}
+      & average rank &             8 &                      3 &           4.2 &           4.2 &                    2.7 &           2.3 &                    5.7 &                      6 \\
+\bottomrule
+\end{tabular}
+
+
+\end{adjustbox}
+\end{table*}

@@ -1,0 +1,28 @@
+\begin{table*}
+\caption{conf_ece}
+\label{table:conf_ece}
+\centering
+\begin{adjustbox}{width=\textwidth}
+
+\begin{tabular}{llllllllll}
+\toprule
+\multicolumn{8}{c}{}&\multicolumn{2}{c}{TS}\\
+\cmidrule{9-10}
+\multicolumn{1}{c}{}&\multicolumn{1}{c}{}&\multicolumn{1}{c}{uncal}&\multicolumn{1}{c}{dir_ODIR_pt}&\multicolumn{1}{c}{ms_ODIR_pt}&\multicolumn{1}{c}{VS}&\multicolumn{1}{c}{IOP}&\multicolumn{1}{c}{TS}&\multicolumn{1}{c}{dec2TS}&\multicolumn{1}{c}{KNN}\\\midrule
+C-10 & DenseNet-40 &   $5.49_{8}$ &  $0.94_{5}$ &  $0.91_{3}$ &   $1.0_{6}$ &            $0.8_{2}$ &           $0.92_{4}$ &   $1.2_{7}$ &  $\mathbf{0.52_{1}}$ \\
+      & ResNet-110 &   $4.75_{8}$ &   $1.1_{7}$ &  $0.99_{5}$ &  $1.07_{6}$ &           $0.91_{2}$ &           $0.94_{3}$ &  $0.94_{3}$ &  $\mathbf{0.84_{1}}$ \\
+      & ResNet Wide 32 &   $4.48_{8}$ &   $0.7_{4}$ &  $0.75_{5}$ &  $0.78_{6}$ &           $0.69_{2}$ &           $0.69_{2}$ &  $0.89_{7}$ &  $\mathbf{0.54_{1}}$ \\
+\cmidrule{2-10}
+      & average rank &            8 &         5.3 &         4.3 &           6 &                  2.2 &                  3.3 &         5.8 &                    1 \\
+\cmidrule{1-10}
+C-100 & DenseNet-40 &  $21.16_{8}$ &  $0.95_{2}$ &  $1.22_{4}$ &  $0.96_{3}$ &           $3.45_{6}$ &  $\mathbf{0.79_{1}}$ &  $3.67_{7}$ &           $3.34_{5}$ \\
+      & ResNet-110 &  $18.48_{8}$ &  $2.27_{3}$ &  $2.31_{4}$ &  $3.04_{6}$ &           $2.79_{5}$ &           $2.13_{2}$ &  $3.18_{7}$ &   $\mathbf{1.9_{1}}$ \\
+      & ResNet Wide 32 &  $18.78_{8}$ &  $1.54_{3}$ &  $1.85_{5}$ &  $1.68_{4}$ &  $\mathbf{1.03_{1}}$ &           $1.41_{2}$ &  $3.08_{7}$ &           $2.46_{6}$ \\
+\cmidrule{2-10}
+      & average rank &            8 &         2.7 &         4.3 &         4.3 &                    4 &                  1.7 &           7 &                    4 \\
+\bottomrule
+\end{tabular}
+
+
+\end{adjustbox}
+\end{table*}

@@ -1,0 +1,23 @@
+\begin{table*}
+\caption{accuracy}
+\label{table:accuracy}
+\centering
+\begin{adjustbox}{width=\textwidth}
+
+\begin{tabular}{lllllllll}
+\toprule
+\multicolumn{7}{c}{}&\multicolumn{2}{c}{TS}\\
+\cmidrule{8-9}
+\multicolumn{1}{c}{}&\multicolumn{1}{c}{}&\multicolumn{1}{c}{uncal}&\multicolumn{1}{c}{TS}&\multicolumn{1}{c}{KNN}&\multicolumn{1}{c}{knnTS_euc_cv_ll}&\multicolumn{1}{c}{rfTS_cv_ll}&\multicolumn{1}{c}{kernelTS_RBF_cv_ll}&\multicolumn{1}{c}{kernelTS_DIR_cv_ll}\\\midrule
+C-10 & DenseNet-40 &  $0.924_{6}$ &  $0.924_{6}$ &  $0.925_{3}$ &     $0.925_{3}$ &  $0.924_{6}$ &        $0.925_{3}$ &  $\mathbf{0.926_{1}}$ \\
+     & ResNet-110 &  $0.936_{4}$ &  $0.936_{4}$ &  $0.936_{4}$ &     $0.936_{4}$ &  $0.936_{4}$ &        $0.936_{4}$ &           $0.936_{4}$ \\
+     & ResNet Wide 32 &  $0.939_{6}$ &  $0.939_{6}$ &   $0.94_{4}$ &      $0.94_{4}$ &  $0.942_{2}$ &        $0.942_{2}$ &           $0.942_{2}$ \\
+\cmidrule{2-9}
+     & average rank &          5.5 &          5.5 &          3.8 &             3.8 &            4 &                  3 &                   2.3 \\
+\cmidrule{1-9}
+\bottomrule
+\end{tabular}
+
+
+\end{adjustbox}
+\end{table*}

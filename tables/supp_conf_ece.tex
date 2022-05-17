@@ -1,0 +1,23 @@
+\begin{table*}
+\caption{conf_ece}
+\label{table:conf_ece}
+\centering
+\begin{adjustbox}{width=\textwidth}
+
+\begin{tabular}{lllllllll}
+\toprule
+\multicolumn{7}{c}{}&\multicolumn{2}{c}{TS}\\
+\cmidrule{8-9}
+\multicolumn{1}{c}{}&\multicolumn{1}{c}{}&\multicolumn{1}{c}{uncal}&\multicolumn{1}{c}{TS}&\multicolumn{1}{c}{KNN}&\multicolumn{1}{c}{knnTS_euc_cv_ll}&\multicolumn{1}{c}{rfTS_cv_ll}&\multicolumn{1}{c}{kernelTS_RBF_cv_ll}&\multicolumn{1}{c}{kernelTS_DIR_cv_ll}\\\midrule
+C-10 & DenseNet-40 &  $5.49_{7}$ &  $0.92_{5}$ &  $\mathbf{0.52_{1}}$ &      $0.72_{2}$ &  $0.92_{5}$ &          $0.8_{3}$ &         $0.82_{4}$ \\
+     & ResNet-110 &  $4.75_{7}$ &  $0.94_{5}$ &  $\mathbf{0.84_{1}}$ &      $0.88_{2}$ &   $0.9_{3}$ &         $1.14_{6}$ &         $0.92_{4}$ \\
+     & ResNet Wide 32 &  $4.48_{7}$ &  $0.69_{2}$ &  $\mathbf{0.54_{1}}$ &      $0.71_{3}$ &  $0.91_{5}$ &         $0.97_{6}$ &         $0.86_{4}$ \\
+\cmidrule{2-9}
+     & average rank &           7 &         4.2 &                    1 &             2.3 &         4.5 &                  5 &                  4 \\
+\cmidrule{1-9}
+\bottomrule
+\end{tabular}
+
+
+\end{adjustbox}
+\end{table*}
