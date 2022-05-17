@@ -65,7 +65,7 @@ For each model-dataset combination run their scripts:
 
 The exact instructions to run the IOP method are provided in their repository.
 Copy the saved files "scores.npy" and "logits.npy" for each model-dataset combination into the corresponding folders "results/precomputed/iop/{model}_{dataset}".
-To modify the saved logit files to be compatible with the Table generation code, uncomment the line 255 in "train_and_save_calibrators.py" and rerun it for "iop_diag" only (modify the for-loop in line 250).
+To modify the saved logit files to be compatible with the table generation code of this work, uncomment the line 255 in "train_and_save_calibrators.py" and rerun it for "iop_diag" only (modify the for-loop in line 250).
 
 Finally, to recreate the tables of real data experiments, run the notebook "Tables of real data experiments.ipynb".
 
